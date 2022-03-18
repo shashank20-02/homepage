@@ -1,0 +1,215 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    /* width: 100vw;
+    height: 100vh; */
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    color: white;
+    font-family: 'Fredoka', sans-serif;
+}
+
+header{
+    /* border:2px solid blue; */
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main{
+    /* border:2px solid red; */
+    height: 84vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+footer{
+    /* border:2px solid green; */
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header img{
+    width: 4rem;
+    height: 3.33rem;
+    margin-top: 1rem;
+    margin-left: 5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 0 1rem;
+}
+
+nav a:hover{
+    color: rgb(253, 211, 74);
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 2px 2px;
+    padding: 2px 8px;
+    
+}
+
+.logo img{
+    width: 2rem;
+    height: 2rem;
+    padding: 0 .5rem;
+}
+
+.logo img:hover{
+    width: 2.25rem;
+    height: 2.25rem;
+}
+
+.main{
+    height: 35rem;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.main img{
+    width: 23rem;
+    height: 23rem;
+    display: block;
+    margin-bottom: 0%;
+
+}
+
+#imgid{
+    animation: glowanimate 4s infinite;
+}
+
+
+
+main img{
+    width: 10rem;
+    height: 10rem;
+    /* animation: animator 1s infinite; */
+}
+
+
+.animation{
+    animation: animator 4s infinite;
+}
+
+
+/* media query */
+
+@media screen and (max-width:1080px){
+
+    header{
+        /* border:2px solid blue; */
+        height: 7vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    main{
+        /* border:2px solid red; */
+        height: 84vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    footer{
+        /* border:2px solid green; */
+        height: 6vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main{
+        height: 40rem;
+        width: 35rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .main img{
+        width: 20rem;
+        height: 20rem;
+        display: block;
+        animation: mainanime 1s infinite;
+
+    }
+
+    #navbar span {
+        display: none;
+    }
+
+    #navbar i{
+        border: 2px solid white;
+        width: 1rem;
+        height: 1rem;
+        padding: .5rem;
+        border-radius: 50%;
+    }
+
+    #navbar i:hover{
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+
+
+    .hid{
+        display: none;
+    }
+
+}
+
+
+
+
+/* animations */
+
+@keyframes animator {
+    50%{
+        width: 12rem;
+        height: 12rem;
+        filter: drop-shadow(0 0 2.75rem rgb(255, 255, 255));
+        transform: scaleX(1) scaleY(1) scaleZ(1);
+    }
+    100%{
+        width: 10rem;
+        height: 10rem;
+
+    }
+}
+
+@keyframes glowanimate {
+    50%{
+        filter: drop-shadow(0 0 2.75rem rgb(255, 255, 255));
+    }
+}
+
+@keyframes mainanime {
+    0% {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    100% {
+        width: 30rem;
+        height: 30rem;
+    }
+}
